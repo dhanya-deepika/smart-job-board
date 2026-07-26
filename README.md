@@ -1,75 +1,203 @@
-# React + TypeScript + Vite
+# Smart Job Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive job search application built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. The application allows users to browse jobs, search opportunities, view detailed job information, and save favorite jobs using Local Storage.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://smart-job-board.vercel.app/
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/dhanya-deepika/smart-job-board
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📖 Project Overview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Smart Job Board is a frontend web application that provides a clean and user-friendly interface for exploring job opportunities. Users can search jobs by title, company, or location, view complete job descriptions, and save jobs for future reference.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The project demonstrates modern frontend development practices including reusable components, routing, responsive design, local state management, Continuous Integration (CI), and Continuous Deployment (CD).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+## ✨ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Responsive UI for desktop and mobile
+- Browse available job listings
+- Search jobs by title, company, or location
+- View complete job details
+- Save and remove favorite jobs
+- Persistent saved jobs using Local Storage
+- Loading skeletons for better user experience
+- Clean and reusable component architecture
+- Automatic CI using GitHub Actions
+- Automatic deployment using Vercel
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- React Icons
+
+### Version Control
+
+- Git
+- GitHub
+
+### CI/CD
+
+- GitHub Actions
+- Vercel
+
+---
+
+## 📁 Project Structure
 
 ```
+src/
+│
+├── assets/
+├── components/
+│   ├── home/
+│   ├── jobs/
+│   └── layout/
+│
+├── data/
+├── hooks/
+├── pages/
+├── routes/
+├── types/
+│
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/dhanya-deepika/smart-job-board.git
+```
+
+Navigate to the project
+
+```bash
+cd smart-job-board
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📜 Available Scripts
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build production files
+
+```bash
+npm run build
+```
+
+Run ESLint
+
+```bash
+npm run lint
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🔄 CI/CD Pipeline
+
+This project uses GitHub Actions for Continuous Integration and Vercel for Continuous Deployment.
+
+### Continuous Integration (CI)
+
+Whenever code is pushed to the `main` branch:
+
+- Repository is checked out
+- Node.js is configured
+- Dependencies are installed
+- Project is built
+- ESLint checks are executed
+
+### Continuous Deployment (CD)
+
+After a successful GitHub push:
+
+- Vercel automatically detects the latest commit
+- Builds the application
+- Deploys the latest version
+- Updates the live website automatically
+
+---
+
+## 🌍 Deployment
+
+**Live Application**
+
+https://smart-job-board.vercel.app/
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of:
+
+- Home Page
+- Jobs Page
+- Job Details Page
+- Saved Jobs Page
+
+---
+
+## 🔮 Future Enhancements
+
+- User Authentication
+- Apply Job Functionality
+- Backend Integration
+- Pagination
+- Dark Mode
+- Advanced Filters
+- Company Profiles
+
+---
+
+## 👩💻 Author
+
+**Dhanya Deepika**
+
+GitHub
+
+https://github.com/dhanya-deepika
